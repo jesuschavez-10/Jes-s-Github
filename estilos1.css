@@ -36,3 +36,77 @@ h2 {  /* este estilo afecta a todos los h2 en index2.thml */
     font-size: 80px;
     color: rgb(241, 218, 7);
 }
+.clase_absolute {
+    font-size: 20px;
+    background-color: coral;
+    height: 250px;
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+.clase_relative {
+    font-size: 20px;
+    background-color: rgb(26, 228, 8);
+    height: 250px;
+    width: 200px;
+    position: relative;
+
+}
+
+.clase_relative3 {
+    font-size: 20px;
+    background-color: rgb(26, 228, 8);
+    height: 200px;
+    width: 150px;
+    position: absolute;
+    bottom: 300px;
+    left: 600px;
+
+}
+.clase_fixed {
+    height: 200px;
+    width: 150px;
+    position: fixed ;
+    left: 500px;
+    bottom: 300px;
+     z-index: -10;
+}
+
+.marca_agua {
+opacity: 0.3;
+pointer-events: none;
+z-index: 10;
+
+
+}
+
+.clase_sticky {
+    position: sticky;
+    font-size: 400px;
+    top: 0px;
+    left: 600px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

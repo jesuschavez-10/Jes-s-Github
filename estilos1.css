@@ -89,16 +89,76 @@ z-index: 10;
     height: 300px;
 }
 
+.bloque { /*estilo display por defecto*/
+    background-color: currentColor;
+    font-size: 20px;
+    margin: 20px;
+    color: blueviolet;
+    }
+
+.tipoinlineblock  { /*estilo display */
+background-color: darkolivegreen(255 , 47,0);
+font-size: 30px;
+margin:10px ;
+color: forestgreen (127, 255, 185);
+display: inline-block;
+width: 500px; 
+
+}
+
+
+.enlinea { /*estil display enline */
+    background-color: darkgreen;
+    display: inline;
+    font-size: 30px;
+    margin: 2px;
+    color: rgb(12, 94, 245);
+    width: 40px;
+    height: 41px;
+
+    }
+    .tiponone { /*estilo display none */
+        background-color: coral;
+        font-size: 20px;
+        margin: 20px;
+        color: darkolivegreen;
+        display: none;
+
+    }
+
+    .tipohidden { /*estilo display hidden */
+        background-color: coral;
+        font-size: 20px;
+        margin: 20px;
+        color: darkolivegreen;
+        display: hidden;
+
+    }
+    .tipoflex {
+        display: flex;
+        background-color: aqua;
+        align-items:center ;
+        justify-content: space-between;
+        
+        }
 
 
 
+        .claseNav {
+            background-color: darkred;
+            font-size: 30PX;
+            padding-inline: 0px;
+            color: azure;
+            display: inline;
+            list-style-type: none;
+
+        }
 
 
+.claseNav a:hover {
+    background-color: chartreuse;
 
-
-
-
-
+}
 
 
 

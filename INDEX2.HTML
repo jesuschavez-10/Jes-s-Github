@@ -34,6 +34,30 @@
     
     </nav>
 
+    <h1>MENU SECUNDARIO con SUBMENU</h1>
+    <nav >
+      <ul class="claseNav">
+         <li> <a  href="https://www.gob.pe/indecopi">  INDECOPI   </a>
+             <ul>  <!-- INICIO SUBMENU -->
+                   <li> <a class="claseNav" href="https://www.gob.pe/institucion/indecopi/tema/deudas-o-multas">  DEUDAS Y MULTAS </a> </li>
+                   <li> <a class="claseNav" href="https://www.gob.pe/institucion/indecopi/tema/reclamos">  RECLAMOS </a> </li>
+             </ul>
+         </li>
+   
+         <li> <a  href="https://www.defensoria.gob.pe/">  DEFENSORIA DEL PUEBLO     </a>
+              <ul>  <!-- INICIO SUBMENU -->
+                  <li> <a class="claseNav" href="https://www.gob.pe/institucion/indecopi/tema/deudas-o-multas">  SUBMENU 1 </a> </li>
+                  <li> <a class="claseNav" href="https://www.gob.pe/institucion/indecopi/tema/reclamos">  SUBMENU 2 </a> </li>
+              </ul>
+         </li> 
+     </ul>
+   
+     </nav>
+
+
+ <br><br>
+
+
     <!--stage changed siver para preparar en desktop y commit para confirmar el cambio en desktop-->
     <h1>esta vercion de la rama 1</h1> 
     <Picture>LA LINEA DE TIEMPO </Picture>
@@ -126,7 +150,7 @@
               <div>
                 
                 <img class="clase_fixed  ; marca_agua"
-                style="border: 9px solid;color: deeppink;(253,55,29)" 
+                style="border: 9px solid;color: deeppink; "( 253,55,29 )
                 src="C:\Users\LAB08-NORTE\Documents\GitHub\Jes-s-Github\imagenes\imagen 07.avif" alt="imagen no disponible"
                 
             width="300"  height="400">
@@ -137,8 +161,8 @@
               <h2>POSICIONAMIENTO stochy</h2>
               <div style="height: 1000px;">
                 
-                <img class="clase_stichy  ; "
-                style="border: 9px solid;color: deeppink;(253,55,29)" 
+                <img class="clase_stichy  "
+                style="border: 9px solid;color: deeppink; "(253,55,29)
                 src="C:\Users\LAB08-NORTE\Documents\GitHub\Jes-s-Github\imagenes\imagen 07.avif" alt="imagen no disponible"
                 
             width="300"  height="400">
@@ -227,7 +251,72 @@
 
 
 
+<h2> FORMULARIO DE REGISTRO</h2>
 
+<Form action="INDEX -TRON.HTML" method="post" > 
+  
+  <P> <Label for="NOMBRE"> NOMBRE: <Input type="text" id="NOMBRE"> </P>
+
+  </P> <Label for="APELIDO"> APELLIDO: <Input type="text" id="APELLIDO"> </P>
+
+   <P> <Label for="EDAD"> EDAD: <Input type="text" id="EDAD"> </P>
+
+    <P> <Label for="ABSERVACION"> OBSERVACION: <Textarea name="OBSERVACION" id="OBSERVACION"
+      style="height: 180PX;width: 300px; font-size: 25px;" > </Textarea> <Label> </P> 
+
+        <p>
+              <label for="estatura"> estatura
+                <select name="grupoestatra" id="estatura">
+                  <option value="seleccione"> seleccione </option>
+                 <option value="menor de 1.50m"> menos de 1.50m    </option>
+                 <option value="de 1.50m de 1.59m"> de 1.50m de 1.59m   </option>
+                 <option value="de 1.60m de 1.69m"> de 1.60m de 1.69m    </option>
+                 <option value="mayor o igual a 1.70m"> mayor o igual a 1.70m    </option>
+
+                </select>
+
+              </label>
+        </p>
+
+
+        <p><label>CURSOS LLEVADOS </label>
+          <BR></BR>
+        <Input type="checkbox" name="CURSOS" value="NUEVAS TENDENCIAS" id="NUEVAS TENDENCIAS">
+         <Label for="NUEVAS TENDENCIAS">NUEVAS TENDENCIAS </Label>     <BR>
+         <Input type="checkbox" name="CURSOS" value="INTRODUCCION A LA NVESTIGACION" id="INTRODUCCION A LA NVESTIGACION">
+          <Label for="INTRODUCCION A LA NVESTIGACION">INTRODUCCION A LA NVESTIGACION </Label>    <BR>
+          <Input type="checkbox" name="CURSOS" value="LENGUAJE DSS" id="LENGUAJE DSS">
+            <Label for="LENGUAJE DSS">LENGUAJE DSS </Label>    <BR>
+            <Input type="checkbox" name="CURSOS" value="INTRO_INV" id="INTRO_INV">
+              <Label for="INTRO_INV">INTRO_INV</Label>     <BR>
+                 
+        
+        
+        
+        </p>
+
+
+
+
+        <label for="fecha"> SELECCIONE FECHA: 
+          <input style="font-size:25px" type="date" name="fecha" id="fecha">
+      </label>
+<BR> </BR>
+
+      <button type="submit" style="font-size:30px ;" > enviar </button>
+
+
+
+
+
+
+
+
+
+
+
+
+</Form>
 
                                                                                         
 

@@ -156,8 +156,45 @@ width: 500px;
 
 
 .claseNav a:hover {
-    background-color: chartreuse;
+    background-color: rgb(255, 145, 0);
 
+}
+
+
+.claseNav ul {
+ list-style-type: none;
+display: block;
+margin: 0px;
+padding: 0px;
+
+}
+
+.claseNav li a {
+    text-decoration: none;
+    padding: 6px 11px;
+    display: block;
+}
+
+
+
+
+.claseNav >li {
+    float: left;
+}
+
+
+
+.claseNav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    background-color: blue;
+}
+
+
+.claseNav li:hover>ul {
+    display: block;
+    background-color: blue;
 }
 
 

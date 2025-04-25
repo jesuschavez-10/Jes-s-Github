@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instituto certus</title>
 </head>
-<body style="background-color: rgb(161, 177, 118);" > 
+<body style="background-color: rgba(37, 70, 37, 0.801);" > 
     <H1 style="background-color: aqua(129, 102, 172);">
         PAGINA CON CCS </H1> 
     <p>hola o_O</p> 
@@ -225,7 +225,7 @@
   <div style="background-color: blue;"> elemento 2 de flex</div>
   <img src="C:\Users\LAB01-NORTE\Documents\GitHub\Jes-s-Github\imagenes\imagen 001.webp" width="100px"  height="100px" 
   alt="imagen no disponible">
-  <div style="background-color: rgb(41, 209, 69);"> elemento 3 de flex </div>
+  <div style="background-color: rgb(102, 124, 106);"> elemento 3 de flex </div>
 
 </div>
 
@@ -255,11 +255,11 @@
 
 <Form action="INDEX -TRON.HTML" method="post" > 
   
-  <P> <Label for="NOMBRE"> NOMBRE: <Input type="text" id="NOMBRE"> </P>
+  <P> <Label for="NOMBRE"> NOMBRE: <Input type="text" id="NOMBRE" autofocus>  </label> </P>
 
-  </P> <Label for="APELIDO"> APELLIDO: <Input type="text" id="APELLIDO"> </P>
+  </P> <Label for="APELIDO"> APELLIDO: <Input type="text" id="APELLIDO"> </label></P>
 
-   <P> <Label for="EDAD"> EDAD: <Input type="text" id="EDAD"> </P>
+   <P> <Label for="EDAD"> EDAD: <Input type="number" id="EDAD" min="18" max="80" > </label> </P>
 
     <P> <Label for="ABSERVACION"> OBSERVACION: <Textarea name="OBSERVACION" id="OBSERVACION"
       style="height: 180PX;width: 300px; font-size: 25px;" > </Textarea> <Label> </P> 
@@ -291,39 +291,99 @@
               <Label for="INTRO_INV">INTRO_INV</Label>     <BR>
                  
         
-        
-        
+
         </p>
 
 
 
 
-        <label for="fecha"> SELECCIONE FECHA: 
-          <input style="font-size:25px" type="date" name="fecha" id="fecha">
-      </label>
-<BR> </BR>
+   <p><label>ciclo actual</label></p>
 
-      <button type="submit" style="font-size:30px ;" > enviar </button>
+  <input style="scale: 1.5 ; " id="primero" type="radio" name="ciclo" value="primero">
+  <label for="primero"> primero </label><br>
+  <input style="scale: 1.5 ; " id="segundo" type="radio" name="ciclo" value="segundo">
+  <label for="segundo"> segundo </label><br>
+  <input style="scale: 1.5 ; " id="tercero" type="radio" name="ciclo" value="tercero">
+  <label for="tercero"> tercero </label><br>
+  <input style="scale: 1.5 ; " id="cuarto" type="radio" name="ciclo" value="cuarto">
+  <label for="cuarto"> cuarto </label><br>
+  <input style="scale: 1.5 ; " id="quinto" type="radio" name="ciclo" value="quinto">
+  <label for="quinto"> quinto </label><br>
+  <input style="scale: 1.5 ; " id="sexto" type="radio" name="ciclo" value="sexto">
+  <label for="sexto"> sexto </label><br>
 
 
 
+     <label for="fecha"> SELECCIONE FECHA: 
+     <input style="font-size:25px" type="date" name="fecha" id="fecha">
+     </label>
+
+  <BR> </BR>
+
+    <label for="fecha"> SELECCIONE CLAVE: 
+     <input style="font-size:25px" type="password" name="CLAVE" id="CLAVE" minlength="5" maxlength="8">
+     
+     </label>
+
+<br><br>
 
 
+        <label for="fecha"> RESETEAR: 
+       <input style="font-size:25px" type="reset" name="RESETEAR" id="RESETEAR">
+       </label>
+ 
+<br><br>
+
+     <label for="fecha"> url: 
+    <input style="font-size:25px" type="url" name="url" id="url">
+    </label>
+
+<br><br>
+
+     <label for="fecha"> submit: 
+     <input style="font-size:25px" type="submit" name="submit" id="submit">
+     </label>
+
+<br><br>
+
+    <label for="fecha"> text: 
+    <input style="font-size:25px" type="text" name="text" id="text">
+    </label>
+
+<br><br>
+
+     <label for="fecha"> time: 
+     <input style="font-size:25px" type="time" name="time" id="time">
+    </label>
+
+<br><br>
+
+     <label for="fecha"> week: 
+     <input style="font-size:25px" type="week" name="week" id="text">
+     </label>
+
+<br><br>
 
 
+    <label for="fecha"> search: 
+    <input style="font-size:25px" type="search" name="search" id="search">
+     </label>
+
+<br><br>
+
+<label for="emeil"> ingreso gmail: 
+  <input style="font-size:25px" type="gmail" name="correo" id="gmail" placeholder="certus.edu.pe">
+  </label>
+<br><br>
+
+
+                <button type="submit" style="font-size:30px ;" > enviar </button>
 
 
 
 
 
 </Form>
-
-                                                                                        
-
-
-
-
-
 
 
 

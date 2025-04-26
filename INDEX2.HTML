@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
     <link rel="stylesheet" href="estilos1.css">
+    <script type="text/javascript" src="SCRIPT1.js "> </script>
 
     <title>instituto certus- PAGINA CON ccs</title>
 </head>
@@ -159,7 +160,7 @@
             
             
               <h2>POSICIONAMIENTO stochy</h2>
-              <div style="height: 1000px;">
+              <div style="height: 1500px;">
                 
                 <img class="clase_stichy  "
                 style="border: 9px solid;color: deeppink; "(253,55,29)
@@ -385,7 +386,42 @@
 
 </Form>
 
+<div style="font-size: 30px ;"> contenedor resultado en  java script </div> 
+<div id="resultado" style="font-size: 30px;"> 
+  <p>operacion suma</p>
+</div>
 
+<script>
+
+window.alert("bienvenidos"); // comando de windows 
+/* javascript acepta los 2 tipos de comentarios */ 
+var valor1 = 40; var valor2 = 60;
+ var suma = valor1 +valor2;  var resta = valor1 -valor2;
+ document.write("<br> <br> <br> fin de pagina" ); // lo realiza al ultimo del script 
+
+console.log("el valor de la suma de" ,valor1, "con" , valor2, "es :" ,suma,);
+console.log("el valor de la resta de" ,valor1, "con" , valor2, "es :" ,resta,);
+document.getElementById('resultado').innerHTML =
+"el valor de la suma de="+valor1+ "con" +valor2+ "es"+suma+ "<br>"
+"el valor de la resta de="+valor1+ "con" +valor2+ "es"+resta 
+
+
+
+</script>
+
+
+<section>
+
+<h1 style="font-size: 40px;"> MANILACION DEL DOM </h1>
+<p id="ejemDOM1" style="font-size: 25px;">
+  este es un texto inicual al aplicar DOM 
+</p>
+
+<button style="font-size: 25PX;"
+ onclick="FCambioColor()" > CAMBIO COLOR 
+   </button>
+
+</section>
 
 
 </body>

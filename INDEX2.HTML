@@ -402,8 +402,8 @@ var valor1 = 40; var valor2 = 60;
 console.log("el valor de la suma de" ,valor1, "con" , valor2, "es :" ,suma,);
 console.log("el valor de la resta de" ,valor1, "con" , valor2, "es :" ,resta,);
 document.getElementById('resultado').innerHTML =
-"el valor de la suma de="+valor1+ "con" +valor2+ "es"+suma+ "<br>"
-"el valor de la resta de="+valor1+ "con" +valor2+ "es"+resta 
+"el valor de la suma de "+valor1+ "con" +valor2+ "es="+suma+ "<br>"
+"el valor de la resta de "-valor1- "con" -valor2- "es="-resta- "<br>"
 
 
 
@@ -412,14 +412,28 @@ document.getElementById('resultado').innerHTML =
 
 <section>
 
-<h1 style="font-size: 40px;"> MANILACION DEL DOM </h1>
-<p id="ejemDOM1" style="font-size: 25px;">
-  este es un texto inicual al aplicar DOM 
+<h1 style="font-size: 40px;"> MANIPULACION DEL DOM </h1>
+<p id="ejmDOM1" style="font-size: 25px;">
+  este es un texto inicial al aplicar DOM 
 </p>
 
+<p class="classDOM1" style="font-size: 25px;"> texto 1 de classDOM1</p>
+<p class="classDOM1" style="font-size: 25px;"> texto 2 de classDOM1</p>
+<h2 class="classDOM1" style="font-size: 25px;"> texto 3 de classDOM1 y tag h2 </h2>
+
 <button style="font-size: 25PX;"
- onclick="FCambioColor()" > CAMBIO COLOR 
+ onclick="FCambioColor()" > CAMBIO DE COLOR 
+
    </button>
+   <button style="font-size: 25PX;"
+   onclick="FCambioClase1()" > CAMBIO POR CLASE
+  
+     </button>
+     <button style="font-size: 25PX;"
+ onclick="FCambioTag1()" > CAMBIO POR TAG H2
+
+   </button>
+
 
 </section>
 

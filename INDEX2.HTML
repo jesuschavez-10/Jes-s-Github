@@ -256,11 +256,11 @@
 
 <Form action="INDEX -TRON.HTML" method="post" > 
   
-  <P> <Label for="NOMBRE"> NOMBRE: <Input type="text" id="NOMBRE" autofocus>  </label> </P>
+  <P> <Label for="NOMBRE"> NOMBRE: <Input type="text" id="NOMBRE" autofocus class="datosPersonales">  </label> </P>
 
-  </P> <Label for="APELIDO"> APELLIDO: <Input type="text" id="APELLIDO"> </label></P>
+  </P> <Label for="APELIDO"> APELLIDO: <Input type="text" id="APELLIDO" class="datosPersonales"> </label></P>
 
-   <P> <Label for="EDAD"> EDAD: <Input type="number" id="EDAD" min="18" max="80" > </label> </P>
+   <P> <Label for="EDAD"> EDAD: <Input type="number" id="EDAD" min="18" max="80" class="datosPersonales" > </label> </P>
 
     <P> <Label for="ABSERVACION"> OBSERVACION: <Textarea name="OBSERVACION" id="OBSERVACION"
       style="height: 180PX;width: 300px; font-size: 25px;" > </Textarea> <Label> </P> 
@@ -377,7 +377,9 @@
   </label>
 <br><br>
 
-
+<button style="font-size: 30px;" type="button"
+onclick="FCapturarNombre()" > Copiar NOmbre a observacion </button>
+<br> <br> <br>
                 <button type="submit" style="font-size:30px ;" > enviar </button>
 
 
@@ -433,6 +435,19 @@ document.getElementById('resultado').innerHTML =
  onclick="FCambioTag1()" > CAMBIO POR TAG H2
 
    </button>
+
+   <h2> AGREGACION DE TEXTO COM CONCATENACION PERMANENTE </h2>
+  
+ <button onclick="FAgregarTextoPermanente()"> Agragar texto permanente variable </button>
+
+</section>
+
+<h2> USO DE CREATE ELEMENT</h2>
+
+<section id="idCrearH1">
+
+
+<button onclick="FcrearH1()"> CREAR H1</button>
 
 
 </section>

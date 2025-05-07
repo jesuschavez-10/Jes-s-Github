@@ -1,8 +1,8 @@
 /* SELECTOC CON SU BLOQUE DE DECLARACIONES */ 
 h2 {  /* este estilo afecta a todos los h2 en index2.thml */ 
     font-size: 4em; 
-    color: rgb(255, 123, 0);
-    background-color: rgb(144, 223, 16);  
+    color: rgb(0, 153, 255);
+    background-color: rgb(236, 203, 13);  
 }
 
 .textoanaranjado { /* clase css que aplica color anaranjad y fuentes lucidaSAns */ 

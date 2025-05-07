@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instituto certus</title>
 </head>
-<body style="background-color: rgba(37, 70, 37, 0.801);" > 
+<body style="background-color: rgba(36, 87, 146, 0.801);" > 
     <H1 style="background-color: aqua(129, 102, 172);">
         PAGINA CON CCS </H1> 
     <p>hola o_O</p> 
@@ -256,13 +256,13 @@
 
 <Form action="INDEX -TRON.HTML" method="post" > 
   
-  <P> <Label for="NOMBRE"> NOMBRE: <Input type="text" id="NOMBRE" autofocus class="datosPersonales">  </label> </P>
+  <P> <Label for="NOMBRE"> NOMBRE: <Input type="text" name="NOMBRE" id="NOMBRE" class="datosPersonales">  </label> </P>
 
-  </P> <Label for="APELIDO"> APELLIDO: <Input type="text" id="APELLIDO" class="datosPersonales"> </label></P>
+  </P> <Label for="APELLIDO"> APELLIDO: <Input type="text" name="APELLIDO" id="APELLIDO" class="datosPersonales"> </label> </P>
 
-   <P> <Label for="EDAD"> EDAD: <Input type="number" id="EDAD" min="18" max="80" class="datosPersonales" > </label> </P>
+   <P> <Label for="EDAD"> EDAD: <Input type="number" name="EDAD" id="EDAD" min="18" max="80" class="datosPersonales" > </label> </P>
 
-    <P> <Label for="ABSERVACION"> OBSERVACION: <Textarea name="OBSERVACION" id="OBSERVACION"
+    <P> <Label for="OBSERVACION"> OBSERVACION: <Textarea name="OBSERVACION" id="OBSERVACION"
       style="height: 180PX;width: 300px; font-size: 25px;" > </Textarea> <Label> </P> 
 
         <p>
@@ -321,52 +321,53 @@
 
   <BR> </BR>
 
-    <label for="fecha"> SELECCIONE CLAVE: 
-     <input style="font-size:25px" type="password" name="CLAVE" id="CLAVE" minlength="5" maxlength="8">
+    <label for="CLAVE"> SELECCIONE CLAVE: 
+     <input style="font-size:25px" type="password" name="CLAVE" id="CLAVE" autofocus
+      minlength="5" maxlength="8">
      
      </label>
 
 <br><br>
 
 
-        <label for="fecha"> RESETEAR: 
+        <label for="RESETEAR"> RESETEAR: 
        <input style="font-size:25px" type="reset" name="RESETEAR" id="RESETEAR">
        </label>
  
 <br><br>
 
-     <label for="fecha"> url: 
+     <label for="url"> url: 
     <input style="font-size:25px" type="url" name="url" id="url">
     </label>
 
 <br><br>
 
-     <label for="fecha"> submit: 
+     <label for="submit"> submit: 
      <input style="font-size:25px" type="submit" name="submit" id="submit">
      </label>
 
 <br><br>
 
-    <label for="fecha"> text: 
+    <label for="text"> text: 
     <input style="font-size:25px" type="text" name="text" id="text">
     </label>
 
 <br><br>
 
-     <label for="fecha"> time: 
+     <label for="time"> time: 
      <input style="font-size:25px" type="time" name="time" id="time">
     </label>
 
 <br><br>
 
-     <label for="fecha"> week: 
+     <label for="week"> week: 
      <input style="font-size:25px" type="week" name="week" id="text">
      </label>
 
 <br><br>
 
 
-    <label for="fecha"> search: 
+    <label for="search"> search: 
     <input style="font-size:25px" type="search" name="search" id="search">
      </label>
 
@@ -378,9 +379,13 @@
 <br><br>
 
 <button style="font-size: 30px;" type="button"
-onclick="FCapturarNombre()" > Copiar NOmbre a observacion </button>
+
+onclick="FCapturarNombre()" > Copiar nombre a observacion </button>
 <br> <br> <br>
-                <button type="submit" style="font-size:30px ;" > enviar </button>
+
+
+
+<button type="submit" style="font-size:30px ;" > enviar </button>
 
 
 
@@ -450,6 +455,21 @@ document.getElementById('resultado').innerHTML =
 <button onclick="FcrearH1()"> CREAR H1</button>
 
 
+</section>
+
+<section> 
+
+  <h2> USO DE FOR clasico y condicionales en una class </h2>
+
+   <p class="classFOR1" style="font-size:25px ;">Texto 1 de classFOR1 [0]</p> 
+    <p class="classFOR1" style="font-size:25px ;">Texto 2 de classFOR1[1]</p>
+    <h2 class="classFOR1" style="font-size:25px ;">Texto 3 de classFOR1[2]</h2>
+    <h3 class="classFOR1" style="font-size:25px ;">Texto 4 de classFOR1[3]</h3>
+
+    <button style="font-size:25px ;" onclick="FUsoFor1()">
+       Reporte de classFOR1</button>
+    <button style="font-size:25px ;" onclick="FEliminarConcat()">
+        Eliminar concatenacion</button>   
 </section>
 
 

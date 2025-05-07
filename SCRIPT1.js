@@ -14,7 +14,11 @@ vTexto1.insertAdjacentHTML("beforeEnd",
 
 vTexto1= "texto fuera de funcion"; //vTexto1 no es la variable de la funcion 
 console.log(vTexto1.innerText);
-console.log(varTemporal); // varTemporal no es definido afuera de funcion 
+//console.log(varTemporal); // varTemporal no es definido afuera de funcion 
+
+
+
+
 
 function FCambioClase1() {
 let vTexto2=document.getElementsByClassName("classDOM1");
@@ -57,22 +61,37 @@ function FcrearH1(){
 
 function FCapturarNombre(){
 
-    const vTexto1 = document.getElementById("nombre");
+    const vTexto1 = document.getElementById("NOMBRE");
     const vTexto2 = document.querySelectorAll("input.datosPersonales");
-    const vTexto3 = document.getElementById("clave") ;
+    const vTexto3 = document.getElementById("CLAVE") ;
    // usar input para clases relacioandas a cajas de texto, etc
     vTexto1.style.color="blue";
     
     var valor1 =vTexto1.value; // value obtiene el contenido de la caja de texto nombre
     var valor2 ="";
-
-    document.getElementById("observacion").value = valor1;//textarea ya captura el nombre
+    vTexto3.value=valor1;
+   //textarea ya captura el nombre
    //foreach recorre todo el contenido del array de la clase datosPersonales
-    vTexto2.forEach(input => {
-        valor2 =valor2 + `${input.name}: ${input.value}\n` ;
-      });
 
-    document.getElementById('observacion').value = valor2;
+    vTexto2.forEach(input => {
+        valor2 =valor2 + `${input.name}: ${input.value}: ${input.id} \n` ; //alt+96 
+        input.style.border="2px solid orange"
+    // para comilas tipotexto permiten colocar varables del form y convertirlas a texto mediate $
+      });
+vTexto2[1].style.border="2px solid red"
+    document.getElementById('OBSERVACION').value = valor2;
     console.log('El valor del nombre es:', valor1);
 }
 
+function FUsoFor1(){
+const vTextoClass = document.getElementsByClassName("classFOR1");
+var vTextoTotal="";
+// como length=4 --> ira desde o hasta 3
+for(let i=0 ; i< vTextoClass.length ; i++)
+{
+    vTextoClass[i].style.borde ="2px solid red"
+    vTextoTotal=vTextoTotal + vTextoClass[i].innerText +'-';
+} // fin de for
+var nuevoH1 =document.createElement("h1");
+var texo =document.createTextNode
+}

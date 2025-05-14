@@ -95,3 +95,64 @@ for(let i=0 ; i< vTextoClass.length ; i++)
 var nuevoH1 =document.createElement("h1");
 var texo =document.createTextNode
 }
+
+
+function FVerificacion() {
+    
+let nombre1 =prompt("Ingresa tu primer nombre",'');
+let nombre2 =prompt("Ingresa tu segundo nombre",'');
+let apellido1 =prompt("Ingresa tu primer apellido",'');
+let apellido2 =prompt("Ingresa tu segundo apellido",'');
+    
+let longitud1 = nombre1.length;
+let longitud2 = nombre2.length;
+let longitudellido1 = apellido1.length;
+let longitudapellido2 = apellido2.length;
+    
+textoconcat = nombre1 + nombre2 ; // concatenado y asignando a textoconcat
+
+if( longitud1 < longitud2 )
+{
+    alert("El primer nombre:" + nombre1 +"es menor al segundo nombre:"+ nombre2 );
+
+    textoconcat = nombre2 + nombre1 ; // concatenado y asignando a textoconcat
+
+}
+else 
+{ if( longitud1 > longitud2 )
+    {
+        alert("El primer nombre:" + nombre1 +"es mayor al segundo nombre:"+ nombre2 );
+        textoconcat = nombre1 + nombre2 ; // concatenado y asignando a textoconcat
+
+    }
+else // caso por defecto igual 
+{
+    alert("El primer nombre:" + nombre1 +"es IGUAL al segundo nombre:"+ nombre2 );
+    textoconcat = nombre1 + nombre2 ; // concatenado y asignando a textoconcat
+
+}}
+   // condicionales para apellido
+    if( longitudapellido1 < longitudapellido2 )
+    {
+        alert("El primer apellido:" + apellido1 +"es menor al segundo apellido:"+ apellido2 );
+
+        textoconcat = apellido2 + apellido1 ; // concatenado y asignando a textoconcat    
+    }
+    else
+     {
+     {if( longitudapellido1 > longitudapellido2 )
+        { 
+            alert("El primer apellido:" + apellido1 +"es mayor al segundo apellido:"+ apellido2 );
+           
+            textoconcat = apellido1 + apellido2 ; // concatenado y asignando a textoconcat    
+        }
+     else // caso por defecto igual 
+            
+                alert("El primer apellido:" + apellido1 +"es IGUAL en longitud al segundo apellido:"+ apellido2 ); 
+                textoconcat = apellido1 + apellido2 ; // da lo mismo el orden de concatenacion            
+            
+            }
+        }
+         
+        alert("apellidos concatenados :"+textoconcat);
+     }

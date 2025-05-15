@@ -313,12 +313,7 @@
   <input style="scale: 1.5 ; " id="sexto" type="radio" name="ciclo" value="sexto">
   <label for="sexto"> sexto </label><br>
 
-
-
-     <label for="fecha"> SELECCIONE FECHA: 
-     <input style="font-size:25px" type="date" name="fecha" id="fecha">
-     </label>
-
+  
   <BR> </BR>
 
     <label for="CLAVE"> SELECCIONE CLAVE: 
@@ -383,6 +378,11 @@
 onclick="FCapturarNombre()" > Copiar nombre a observacion </button>
 <br> <br> <br>
 
+<button style="font-size:30px ;" type="button" 
+
+onclick="FValidarCiclo()">Enviar ciclo a Observacion</button>
+<br> <br><br>
+
 
 
 <button type="submit" style="font-size:30px ;" > enviar </button>
@@ -416,6 +416,16 @@ document.getElementById('resultado').innerHTML =
 
 </script>
 
+<p id="miParrafo">Esto es un párrafo <strong style="display:none;">oculto</strong> y <em>texto en cursiva</em></p>
+
+<section>
+<h1 style="font-size: 32px;"> ejemplo de manipulacion del DOM</h1>
+<p id="EjmDOM1" style="font-size: 25px;"> este es el primerito de texto al aplicarle DOM </p>
+
+
+
+
+</section>
 
 <section>
 
@@ -468,11 +478,13 @@ document.getElementById('resultado').innerHTML =
 
     <button style="font-size:25px ;" onclick="FUsoFor1()">
        Reporte de classFOR1</button>
+
     <button style="font-size:25px ;" onclick="FEliminarConcat()">
         Eliminar concatenacion</button>   
 </section>
+ 
 
-<section> 
+ <section> 
   <h2> Actividad para el estudiante </h2>
 
   <button style="font-size:25px ;" onclick="FVerificacion()">
@@ -481,7 +493,10 @@ document.getElementById('resultado').innerHTML =
 
 </section>
 
+ <p style="font-size: 20px;"> <label for="numColegios"> Numero Colegios que estudió: <input type="number" id="numColegios" name="numColegios"  
+  style="font-size: 20px;" min="1" max="12"> </label> </p>
 
+  <div id="DetalleColegios"> DEtalle Estudios: </div>
 </body>
 </html> 
 

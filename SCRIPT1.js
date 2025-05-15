@@ -83,7 +83,9 @@ vTexto2[1].style.border="2px solid red"
     console.log('El valor del nombre es:', valor1);
 }
 
-function FUsoFor1(){
+function FUsoFor1()
+{
+
 const vTextoClass = document.getElementsByClassName("classFOR1");
 var vTextoTotal="";
 // como length=4 --> ira desde o hasta 3
@@ -92,11 +94,128 @@ for(let i=0 ; i< vTextoClass.length ; i++)
     vTextoClass[i].style.borde ="2px solid red"
     vTextoTotal=vTextoTotal + vTextoClass[i].innerText +'-';
 } // fin de for
+
 var nuevoH1 =document.createElement("h1");
-var texo =document.createTextNode
+var texto = document.createTextNode(vTextoTotal);
+ nuevoH1.appendChild(texto);
+  vTextoClass[3].appendChild(nuevoH1);
+
+
+
+}  // fin de function
+
+function FEliminarConcat()
+{
+  const vTextoClass = document.getElementsByClassName("classFOR1");
+  let rpta =prompt("Estas seguro de eliminar el texto concatenado?(S/N)",'');
+  if (rpta=="S" || rpta=="s")  //  doble || significa o
+    { let rpta2 =prompt("ingrese el numero de fila que quiere eliminar",'');
+       vTextoClass[rpta2].remove();  // eliminar la class de posicion [3]
+      alert("CONCATENCION ELMINADA");
+    }  
+  else
+    { if(rpta=="N" || rpta=="n")
+      { alert("NO SE elimnará");
+      }
+      else
+      { alert("OPCION INCORRECTA-INgresa nuevamente");
+      }
+    }
+  //removeChild funciona cuando un nodo(class, id, etx) esta dentro de otro
+}
+function Fcapturarnombre(){
+
+    const vTexto1 = document.getElementById("nombre");
+    const vTexto2 = document.querySelectorAll("input.datosPersonales");
+    const vTexto3 = document.getElementById("CLAVE");
+
+
+vTexto1.style.color="red";
+
+var valor1 =vTexto1.value;// value obtine el contenido de la caja de texto nombre
+var valor2 =""; //tipo string
+vTexto3.value=valor1;// asigna el nombre a la clave
+document.getElementById("observacion").value = valor1;//textarea ya captura el nombre
+
+  //foreach recorre todo el contenido del array de la clase datosPersonales
+  vTexto2.forEach(input => {
+ valor2 =valor2 +  `${input.name} : ${input.id}: ${input.value}       \n`;// alt+96 
+ input.style.border="2px solid orange";
+  //para comillas tipotexto permiten colocar variables del form y convertirlas a texto mediante $
+  });
+vTexto2[1].style.border="2px solid green";
+
+document.getElementById('observacion').value = valor2;
+document.getElementById('observacion').style.color="blue";
+console.log('El valor del nombre es:', valor1);
+
+
+
+
+}
+
+function FValidarCiclo(){
+
+const varciclo =document.getElementsByName("ciclo");
+
+for (let i = 0; i < varciclo.length; i++) {
+  if (varciclo[i].checked==true) {
+    // alert ("Seleccionaste: "+ varciclo[i].value);
+document.getElementById('observacion').value = varciclo[i].value;
+return; // detener el bucle una vez que se encuentre el seleccionado 
+
+  }
+
+}
+}
+
+document.addEventListener("DOMContenLoaded", () => {
+const radios = document.querySelectorAll('input[name="ciclo"]');
+radios.forEach(function(radio){
+  radio.addEventListener('change', function(event) {
+    console.log("ciclo seleccionado:", event.target.value);
+    const cantidad = event.target.value;
+
+    document.getElementById('observacion').value = cantidad;
+    });
+}
+);
+});
+
+function Fcasillas(){
+
+  const cursos = document.querySelectorAll('input[name="cursos"]');
+  cursos.forEach(function(checkbox){
+    checkbox.addEventListener('change',function(event){
+      console.log("curso seleccionado:", event.target.value);
+      const cantidad = event.target.value;
+
+      document.getElementById('observacion').value = cantidad;
+    });
+
+
+
+
+  }
+  );
 }
 
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const numCole = document.getElementById("numColegios"); ("input",(event)=> {
+      let content ="";
+      const cantR=event.target.value;
+      const vTexto1 = document.getElementById("EjmDOM1"); //para validar el valor
+      vTexto1.innerText= cantR;   
+      document.getElementById('observacion').value = cantR; //para validar el valor
+      for(let i=0; i<cantR ;i++)
+      {
+        content=content + `<div> <label> Colegio ${i+1} </label>
+                            
+                         <input type="text" id="cole[${i}]" > </div>`;
+                         document.getElementById("DetalleColegios").innerHTML=content;
+                          } });
+    });   
 function FVerificacion() {
     
 let nombre1 =prompt("Ingresa tu primer nombre",'');
@@ -156,3 +275,11 @@ else // caso por defecto igual
          
         alert("apellidos concatenados :"+textoconcat);
      }
+
+    
+
+
+
+
+
+
